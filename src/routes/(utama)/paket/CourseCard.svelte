@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
   /**@type {{
     slug: string,
     nama: string,
@@ -23,11 +25,11 @@
     <p class="font-bold text-2xl text-center">{course.harga} / jam</p>
     {#if course.materi.length > 0}
       <div class="flex gap-4 lg:flex-row flex-col">
-        <a href="/paket/pesan" class="btn text-white btn-success flex-1"
+        <a href="{base}/paket/pesan" class="btn text-white btn-success flex-1"
           >Pesan</a
         >
         <a
-          href="paket/{course.slug}"
+          href="{base}/paket/{course.slug}"
           class="btn text-white btn-ghost flex-1 btn-outline">Materi</a
         >
         <a

@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { courses } from "$lib/courses";
   let durasi = 1;
   let alamat = "";
@@ -66,7 +67,7 @@
       >Pesan kursus</button
     >
     <a
-      href="/paket"
+      href="{base}/paket"
       class="btn btn-error btn-outline dark:hover:!text-black hover:!text-white"
       >Kembali ke daftar paket</a
     >
